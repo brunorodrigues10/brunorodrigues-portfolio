@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url(colors.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-fundo-primaria);
+  color: var(--cor-fonte-primaria);
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    padding: 20px 40px;
+    background-color: var(--cor-fundo-secundaria);
+    border-bottom: 1px solid var(--cor-borda);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.container{
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo{
+    font-size: 1.8rem;
+    color: var(--cor-destaque-azul);
+    font-weight: 700;
+}
+
+/*Menu hamburger*/
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--cor-fonte-primaria);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: var(--cor-destaque-azul);
+}
+
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    color: var(--cor-fonte-primaria);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/*MOBILE 768px*/
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    top: 70px;
+    right: 40px;
+  }
+
+  nav .menu {
+    flex-direction: column;
+    background-color: var(--cor-fundo-secundaria);
+    gap: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    display: none;
+  }
+
+  nav .menu.show {
+    display: flex;
+  }
+
+  /* Esconde o menu padrão em mobile até clicar no botão */
+  nav .menu li {
+    text-align: right;
+  }
+}
+
