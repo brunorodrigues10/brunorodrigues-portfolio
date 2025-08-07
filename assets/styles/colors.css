@@ -1,0 +1,26 @@
+:root {
+  /* 🎨 Cor de fundo */
+  --cor-fundo-primaria: #0f0f0f;       /* fundo principal */
+  --cor-fundo-secundaria: #1e1e1e;     /* cards, seções */
+  --cor-fundo-hover: #2a2a2a;          /* hover em botões/cards */
+
+  /* ✍️ Cor de fonte (textos) */
+  --cor-fonte-primaria: #f1f1f1;       /* títulos e textos principais */
+  --cor-fonte-secundaria: #b0b0b0;     /* textos complementares */
+  --cor-fonte-destaque: #ffffff;       /* textos sobre fundo colorido */
+
+  /* 🌈 Cores de destaque */
+  --cor-destaque-azul: #00bcd4;        /* links, ícones tech */
+  --cor-destaque-roxo: #9c27b0;        /* elementos em destaque */
+  --cor-hover: #2979ff;                /* ao passar o mouse */
+
+  /* 🔲 Cores de borda / sombra */
+  --cor-borda: #333333;
+  --cor-sombra-card: rgba(0, 188, 212, 0.2);
+  --cor-sombra-hover: rgba(0, 188, 212, 0.4);
+
+  /* 🔘 Botões */
+  --cor-botao-bg: #00bcd4;
+  --cor-botao-texto: #0f0f0f;
+  --cor-botao-hover: #00e5ff;
+}
