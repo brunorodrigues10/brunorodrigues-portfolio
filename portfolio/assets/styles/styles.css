@@ -160,6 +160,29 @@ header{
   padding-bottom: 3rem;
 }
 
+.sobre {
+  max-width: 800px;         /* largura máxima para toda a seção */
+  margin: 0 auto;           /* centraliza horizontalmente */
+  padding: 2rem 1rem;       /* espaçamento interno */
+  text-align: center;       /* centraliza o conteúdo */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sobre h1 {
+  margin-bottom: 1rem;
+  color: var(--cor-destaque-azul);
+}
+
+.sobre p {
+  max-width: 600px;         /* restringe a largura do texto */
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--cor-fonte-secundaria);
+}
+
 
 
 /*MOBILE 768px*/
@@ -236,4 +259,8 @@ header{
     box-shadow: 0 0 12px var(--cor-destaque-azul);
   }
 
+  .sobre{
+    margin: 5rem;
+    text-align: center;
+  }
 }
